@@ -101,26 +101,22 @@ header .menu li {
 }
 .buttons{
         position: relative;
-        font-size: 1.875rem;
+        font-size: 1.0rem;
         padding: 0.75rem 2rem;
-        font-weight: 600;
+        font-weight: 400;
         border: none;
         cursor: pointer;
         transition: all 250ms;
-        display: inline-flex;
+        display: flex;
         align-items: center;
         gap: 0.5rem;
         background-color: rgb(124 58 237);
         color: white;
         border-radius: 0.5rem;
-        box-shadow:
-        inset 0 1px 0 0 rgba(255,255,255,0.3),
-        0 2px 0 0 rgb(109 40 217),
-        0 4px 0 0 rgb(91 33 182),
-        0 6px 0 0 rgb(76 29 149),
-        0 8px 0 0 rgb(67 26 131),
-        0 8px 16px 0 rgba(147,51,234,0.5);
         overflow: hidden;
+        width: 25vw;
+        text-align: center;
+        justify-content: center;
 }
 
 /* css slider */
