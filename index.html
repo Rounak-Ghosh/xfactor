@@ -12,18 +12,35 @@
     <header>
         <img class="logo" src="image/logo.PNG">
         <div class="logo">XFACTOR</div>
-            <ul class="menu">
-                <li><a class="non-mobile" href="#">Home</a></li>
-                <li><a class="non-mobile" href="#">About Us</a></li>
-                <li><a class="non-mobile" href="#">Upcomming Rides</a></li>
-                <li><a class="non-mobile" href="#">Stories</a></li>
-                <li><a class="non-mobile" href="#">Merchandise</a></li>
-                <li><a class="non-mobile" href="#">Contact Us</a></li>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
+        <ul class="menu">
+            <div class="mobile-buttons">
+                <button class="buttons" onclick="userRegister()" target="blank" type="button">Register</button>
+                <button class="buttons" onclick="userLogin()" target="blank" type="button">Login</button>
+            </div>
+            <li><a class="mobile" href="#">Home</a></li>
+            <li><a class="mobile" href="#">About Us</a></li>
+            <li><a class="mobile" href="#">Upcoming Rides</a></li>
+            <li><a class="mobile" href="#">Stories</a></li>
+            <li><a class="mobile" href="#">Merchandise</a></li>
+            <li><a class="mobile" href="#">Contact Us</a></li>
+            <li class="desktop"><a href="https://www.google.com/" target="blank">Register</a></li>
+            <li class="desktop"><a href="https://www.google.com/" target="blank">Login</a></li>
+        </ul>
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>   
     </header>
+
+    <!-- text strip -->
+    <div class="text-strip">
+        <p>
+            🏗️🏗️ Website is under development 🏗️🏗️ &emsp; &emsp; &emsp; &emsp;
+            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 
+            ✨✨ Stay tuned! We will go live soon ✨✨ &emsp; &emsp; &emsp; &emsp;
+            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            🏍️🏍️ Next ride is scheduled for March 13, 2025!! 🏍️🏍️ 
+        </p>
+    </div>
 
     <!-- slider -->
     <div class="slider">
@@ -32,7 +49,7 @@
                 <img src="image/img1.JPG">
                 <div class="content">
                     <p>NOV 24</p>
-                    <h2>KAKRAJHOR</h2>
+                    <h2>KANKRAJHOR</h2>
                     <!-- <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
@@ -94,7 +111,7 @@
             <div class="item active">
                 <img src="image/img1.JPG">
                 <div class="content">
-                    KAKRAJHOR
+                    KANKRAJHOR
                 </div>
             </div>
             <div class="item">
@@ -124,6 +141,9 @@
         </div>
     </div>
 
+    <!-- touch areas -->
+    <div id="left-half"></div>
+    <div id="right-half"></div>
 
     <script src="app.js"></script>
 </body>

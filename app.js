@@ -63,7 +63,37 @@ thumbnails.forEach((thumbnail, index) => {
 
 // click menu dash
 function toggleMenu() {
-    console.log('Clicked');
     const menu = document.querySelector('.menu');
+    const buttons = document.querySelector('.mobile-buttons');
     menu.classList.toggle('active');
+    buttons.classList.toggle('active');
+}
+
+document.getElementById('left-half').addEventListener('click', showPrevImage);
+document.getElementById('right-half').addEventListener('click', showNextImage);
+
+function showPrevImage() {
+    itemActive = itemActive - 1;
+    if(itemActive < 0){
+        itemActive = countItem - 1;
+    }
+    showSlider();
+}
+
+function showNextImage() {
+    itemActive = itemActive + 1;
+    if(itemActive >= countItem){
+        itemActive = 0;
+    }
+    showSlider();
+}
+
+function userRegister() {
+    //location.href = "http://www.google.com";
+    window.open('http://www.google.com');
+}
+
+function userLogin() {
+    //location.href = "http://www.google.com";
+    window.open('http://www.google.com');
 }
